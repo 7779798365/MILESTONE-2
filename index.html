@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Milestone2: Dynamic Resume</h1>
+    <form id="resumeform">
+        <fieldset>
+            <legend>Personal Information</legend>
+              <label for="username">Data URL</label>
+            <input type="text" id="username" name="username" required> <br>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <!-- Add profile picture -->
+            <label for="profilePicture">Profile Picture:</label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education:</label><br>
+            <textarea id="education" name="education" required></textarea><br>
+        </fieldset>
+        <fieldset>
+            <legend>Work Experience</legend>
+            <label for="experience">Work Experience:</label><br>
+            <textarea id="experience" name="experience" required></textarea><br>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills:</label><br>
+            <textarea id="skills" name="skills" required></textarea><br>
+        </fieldset>
+        <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resumeOutPut">
+        <!-- Generated resume will appear here -->
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
